@@ -3,10 +3,17 @@ const router = express.Router();
 
 const routes = [
 	"/equacoes",
-	"/circulo",
-	"/pi",
+	"/area",
 	"/barras",
-	"/horizontal"
+	"/horizontal",
+	"/pizza",
+	"/doughnut",
+	"/medidor",
+	"/dispersao",
+	"/radar",
+	"/velas",
+	"/pi",
+	"/circulo"
 ];
 
 for (let route of routes) {

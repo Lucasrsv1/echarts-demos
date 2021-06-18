@@ -41,8 +41,9 @@ const option = {
 			540, 50, 0, 0, 0, 0, 820, 932, 901, 934, 1290, 10, 1320,
 			760, 889, 1005, 430, 400, 893, 723, 24, 801, 910, 1083, 764
 		],
-		type: "bar",
+		type: "line",
 		step: "middle",
+		// smooth: true,
 		areaStyle: {},
 		stack: "maquina"
 	}, {
@@ -51,8 +52,9 @@ const option = {
 			618, 83, 0, 0, 0, 0, 1187, 965, 1198, 703, 900, 19,
 			499, 812, 979, 513, 986, 629, 575, 436, 32, 1068, 686, 1027
 		],
-		type: "bar",
+		type: "line",
 		step: "middle",
+		// smooth: true,
 		areaStyle: {},
 		stack: "maquina"
 	}],

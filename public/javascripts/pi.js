@@ -1,6 +1,6 @@
 const chart = echarts.init(document.getElementById("chart"));
 
-const ITERATIONS = 100;
+const ITERATIONS = 2000;
 const data = [];
 const sum = [];
 
@@ -34,7 +34,7 @@ option = {
 		top: 50
 	},
 	dataZoom: [
-		{ top: 0 },
+		{ top: 0, end: 10 },
 		{ orient: "vertical" },
 		{ type: "inside" },
 		{ type: "inside", orient: "vertical" }

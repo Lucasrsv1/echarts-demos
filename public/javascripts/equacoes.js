@@ -38,7 +38,7 @@ option = {
 	legend: {},
 	tooltip: {
 		formatter: params => {
-			return `${params.seriesName}<br/>${params.marker} F(${params.value[0]}) = ${params.value[1]}`;
+			return `${params.seriesName}<br/>${params.marker} <b>F(${params.value[0]}) = ${params.value[1]}</b>`;
 		}
 	},
 	xAxis: [{

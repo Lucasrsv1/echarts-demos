@@ -29,7 +29,7 @@ option = {
 	title: {
 		text: "Pontos Uniformemente Aleatórios em um Círculo"
 	},
-	legend: {},
+	legend: { top: "bottom" },
 	toolbox: {
 		feature: {
 			saveAsImage: {},
@@ -49,7 +49,7 @@ option = {
 		max: Y + RADIUS * 1.1
 	},
 	dataZoom: [
-		{},
+		{ bottom: 40 },
 		{ type: "inside" },
 		{ orient: "vertical" },
 		{ type: "inside", orient: "vertical" }
@@ -69,7 +69,14 @@ option = {
 		data: randomPoints,
 		type: "scatter",
 		symbolSize: 4
-	}]
+	}],
+	grid: {
+		containLabel: true,
+		left: 10,
+		right: 60,
+		top: 60,
+		bottom: 80
+	}
 };
 
 chart.setOption(option);

@@ -1,90 +1,78 @@
 const chart = echarts.init(document.getElementById("chart"));
 
 const option = {
+	title: {
+		text: "Carros Produzidos"
+	},
 	tooltip: {
 		trigger: "axis",
 		axisPointer: {
 			type: "shadow"
 		}
 	},
+	toolbox: {
+		feature: {
+			saveAsImage: {},
+			restore: {},
+			dataView: {}
+		}
+	},
 	legend: {
-		data: ["Direct", "Mail Ad", "Affiliate Ad", "Video Ad", "Search Engine"]
+		data: ["Mobi", "Argo", "Nova Strada", "Cronos", "Toro"]
 	},
 	xAxis: {
+		name: "Carros",
+		nameGap: 7,
 		type: "value"
 	},
 	yAxis: {
+		name: "Dia da Semana",
+		nameGap: 7,
 		type: "category",
-		data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+		data: ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
 	},
-	series: [
-		{
-			name: "Direct",
-			type: "bar",
-			stack: "total",
-			label: {
-				show: true
-			},
-			emphasis: {
-				focus: "series"
-			},
-			data: [320, 302, 301, 334, 390, 330, 320]
-		},
-		{
-			name: "Mail Ad",
-			type: "bar",
-			stack: "total",
-			label: {
-				show: true
-			},
-			emphasis: {
-				focus: "series"
-			},
-			data: [120, 132, 101, 134, 90, 230, 210]
-		},
-		{
-			name: "Affiliate Ad",
-			type: "bar",
-			stack: "total",
-			label: {
-				show: true
-			},
-			emphasis: {
-				focus: "series"
-			},
-			data: [220, 182, 191, 234, 290, 330, 310]
-		},
-		{
-			name: "Video Ad",
-			type: "bar",
-			stack: "total",
-			label: {
-				show: true
-			},
-			emphasis: {
-				focus: "series"
-			},
-			data: [150, 212, 201, 154, 190, 330, 410]
-		},
-		{
-			name: "Search Engine",
-			type: "bar",
-			stack: "total",
-			label: {
-				show: true
-			},
-			emphasis: {
-				focus: "series"
-			},
-			data: [820, 832, 901, 934, 1290, 1330, 1320]
-		}
-	],
+	series: [{
+		name: "Mobi",
+		type: "bar",
+		stack: "total",
+		label: { show: true },
+		emphasis: { focus: "series" },
+		data: [320, 302, 301, 334, 390, 130, 0]
+	}, {
+		name: "Argo",
+		type: "bar",
+		stack: "total",
+		label: { show: true },
+		emphasis: { focus: "series" },
+		data: [225, 183, 191, 233, 270, 330, 0]
+	}, {
+		name: "Nova Strada",
+		type: "bar",
+		stack: "total",
+		label: { show: true },
+		emphasis: { focus: "series" },
+		data: [121, 132, 101, 134, 90, 58, 0]
+	}, {
+		name: "Cronos",
+		type: "bar",
+		stack: "total",
+		label: { show: true },
+		emphasis: { focus: "series" },
+		data: [150, 212, 201, 154, 190, 330, 0]
+	}, {
+		name: "Toro",
+		type: "bar",
+		stack: "total",
+		label: { show: true },
+		emphasis: { focus: "series" },
+		data: [98, 135, 189, 204, 184, 258, 0]
+	}],
 	grid: {
 		containLabel: true,
-		left: 0,
-		right: 0,
-		top: 50,
-		bottom: 0
+		left: 10,
+		right: 60,
+		top: 60,
+		bottom: 50
 	}
 };
 
